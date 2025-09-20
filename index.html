@@ -1,0 +1,217 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Edlin Ghazilan — Resume</title>
+  <meta name="description" content="Resume / CV - Edlin Ghazilan. Cloud-focused resume for static site." />
+  <style>
+    :root{--bg:#f6f7fb;--card:#ffffff;--accent:#0f62fe;--muted:#6b7280;--glass: rgba(15,98,254,0.06)}
+    *{box-sizing:border-box}
+    body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;line-height:1.4;margin:0;background:linear-gradient(180deg,var(--bg),#fff)}
+    .container{max-width:980px;margin:36px auto;padding:24px}
+    .card{background:var(--card);border-radius:12px;padding:28px;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:108px;height:108px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#6a8cff);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:30px}
+    h1{margin:0;font-size:24px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    .contact{margin-top:14px;display:flex;gap:14px;flex-wrap:wrap}
+    .pill{background:var(--glass);padding:8px 12px;border-radius:999px;font-size:13px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:20px}
+    main{padding-right:6px}
+    aside{background:linear-gradient(180deg,#fbfbff,#fff);padding:18px;border-radius:10px;height:100%}
+    section{margin-bottom:20px}
+    h2{font-size:16px;margin:0 0 8px}
+    ul{margin:8px 0 0;padding-left:18px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:#f1f5f9;padding:6px 8px;border-radius:6px;font-size:13px}
+    .project{border-left:3px solid var(--accent);padding:10px 12px;margin:8px 0;border-radius:6px;background:#fff}
+    .meta{color:var(--muted);font-size:13px}
+    .job{padding:10px 12px;border-radius:6px;background:#fff;margin:10px 0}
+    .download{display:inline-block;margin-top:10px;padding:10px 14px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none}
+    @media (max-width:880px){.grid{grid-template-columns:1fr;}.avatar{width:86px;height:86px;font-size:22px}}
+    @media print{body{background:#fff}.container{box-shadow:none;margin:0} .download{display:none}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <header>
+        <div class="avatar">EG</div>
+        <div style="flex:1">
+          <h1>Edlin Ghazilan</h1>
+          <p class="lead">Aspiring Cloud Engineer · Applied Physics (2019) · Former Electronic & Technical Engineer</p>
+          <div class="contact">
+            <span class="pill">Location: 42200, Klang</span>
+            <span class="pill">Phone: +60‑18 3244510</span>
+            <span class="pill">Email: edlin.ghazilan@gmail.com</span>
+            <a class="download" href="#" onclick="window.print();return false">Print / Save PDF</a>
+          </div>
+        </div>
+      </header><div class="grid">
+    <main>
+      <!-- PROFESSIONAL SUMMARY -->
+      <section>
+        <h2>Professional Summary</h2>
+        <p>I'm an aspiring Cloud Engineer in transition, with experience in telecommunications and electronics. I have hands-on with AWS networking, including secure VPC setup and configuration. I am now focusing on cloud networking, infrastructure as well as automation. Currently studying for CompTIA Network+, CompTIA Cloud+ and Microsoft Azure Administration certifications.</p>
+      </section>
+
+      <!-- CLOUD PROJECTS (placed before WORK EXPERIENCE per preference) -->
+      <section>
+        <h2>Cloud Projects</h2>
+
+        <!-- Example Project 1 -->
+        <div class="project">
+          <strong>Static Website Hosting on AWS using Amazon S3</strong>
+          <div class="meta">Personal project — setup: S3 static site, automated deploy via GitHub Actions</div>
+          <ul>
+            <li>Deployed a personal portfolio website using Amazon static website hosting.</li>
+            <li>Configure bucket policies and IAM permission to control public access.</li>
+            <li>Uploaded HTML, CSS, and JavaScript files for hosting, ensuring cross-browser compatibility.</li>
+	    <li>Outcome: Delivered a low cost,globally accessible website demonstration cloud deployment skills.</li>
+          </ul>
+        </div>
+
+        <!-- Example Project 2 -->
+        <div class="project">
+          <strong>Cross region VPC peering project in AWS</strong>
+          <div class="meta">Lab environment — VPC, subnets, configure storage, snapshot and peering</div>
+          <ul>
+            <li>Created custom VPCs in asia Pacific(Malaysia) and US North Virginia, each hosting EC2 instances in private subnets.</li>
+            <li>Configure EBS volumes and created snapshots to demonstrate data persistence and backup.</li>
+	    <li>Deploy a bastian host in a public subnet to securely connect to private EC2 instances via SSH, ensuring controlled access.</li>
+            <li>Establish cross region VPC peering to enable private communication between instances across the two region.</li>
+            <li>Outcome: Built a secure, multi region architecture demonstrating networking, storage management and access security on AWS.</li>
+          </ul>
+        </div>
+
+      </section>
+
+      <!-- CERTIFICATIONS (before Work Experience) -->
+      <section>
+        <h2>Certifications & Training</h2>
+        <ul>
+          <li><strong>CompTIA Network+</strong> — In progress</li>
+	  <li><strong>CompTIA Cloud+</strong> — In progress</li>
+          <li><strong>Microsoft Azure Administration</strong> — In progress</li>
+          <li><strong>Network and Multicloud Bootcamp</strong> — September 2025</li>
+	  <li><strong>Fibre Optic and Mobile Telecommunication</strong> — December 2020</li>
+        </ul>
+        <p class="meta">Tip: Will include completion dates and certificate IDs when available to improve credibility for recruiters in Malaysia.</p>
+      </section>
+
+      <!-- WORK EXPERIENCE -->
+      <section>
+        <h2>Work Experience</h2>
+
+        <!-- Add more jobs as needed -->
+        <div class="job">
+          <strong>Technical Engineer — Premtel Systems Sdn. Bhd.</strong>
+          <div class="meta">2021-2025</div>
+          <ul>
+            <li>Manage project given to ensure every aspect of the project is covered and completed within customer’s requirements</li>
+	    <li>Manage project risks and issues by develop contingency plans when necessary.</li>
+            <li>Develop project details, resource requirements and effective communication on the project’s progress to management, inter departments, sub-contractors and customers.</li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <strong>Electronic Engineer — Comdelta Technologies Sdn. Bhd</strong>
+          <div class="meta">Dates: 2019–2020</div>
+          <ul>
+            <li>Worked on electronic design and troubleshooting for production lines.</li>
+            <li>Coordinated with cross-functional teams to improve yield and reliability.</li>
+            <li>Involved in reverse-engineered boost module circuit and design which later being used for next batch production prototype.</li>
+          </ul>
+        </div>
+
+      </section>
+
+      <!-- EDUCATION -->
+      <section>
+        <h2>Education</h2>
+        <div class="job">
+          <strong>Bachelor of Science with Honors (Applied Physics) – Elective in Photonics</strong>
+          <div class="meta">Graduated: 2019 | CGPA:3.33</div>
+          <div>Include relevant coursework (electronics, signals, instrumentation) if it helps the role.</div>
+        </div>
+      </section>
+
+      <!-- ADDITIONAL DETAILS / ATS KEYWORDS -->
+      <section>
+        <h2>Keywords & Tools (for ATS)</h2>
+        <div class="skills">
+          <span class="skill">AWS</span>
+          <span class="skill">Azure</span>
+          <span class="skill">VPC</span>
+	  <span class="skill">EC2</span>
+	  <span class="skill">IAM</span>
+	  <span class="skill">Elastic Load Balancer</span>
+          <span class="skill">VLSM</span>
+	  <span class="skill">DNS</span>
+	  <span class="skill">DHCP</span>
+	  <span class="skill">Cloud Networking</span>
+	  <span class="skill">Cloud Security</span>
+          <span class="skill">Network Analyzer</span>
+          <span class="skill">Virtual Network</span>
+          <span class="skill">Networking</span>
+	  <span class="skill">Cloudwatch</span>
+	  <span class="skill">Disaster Recovery</span>
+	  <span class="skill">Auto-Scaling</span>
+	  <span class="skill">Logging and monitoring</span>
+          <span class="skill">Shell scripting</span>
+          <span class="skill">Linux</span>
+        </div>
+      </section>
+
+    </main>
+
+    <aside>
+      <section>
+        <h2>Quick Highlights</h2>
+        <ul>
+          <li>Engineer with a background in Applied Physics(production/R&D).</li>
+          <li>Strong troubleshooting & instrumentation background.</li>
+          <li>Transitioning and focusing into cloud networking as well as infrastructure.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Technical Skills</h2>
+        <ul>
+          <li>Networking: TCP/IP, routing:static, default, floating, RIP, EIGRP,OSPF, subnets: VLSM, IP services: DHCP, NAT, HSRP, DNS, Network Analyzer: Wireshark, Cisco IOS Based Switchers: VTP, STP, Trunking, VLANs,</li>
+          <li>Cloud: AWS services: IAM, EC2, S3, EBS, Cloudwatch, Global Accelerator, System Manager, Cloud-Init, PVC peering, Auto-Scaling, Snapshot, AMI, Disaster recovery, NAT Gateway</li>
+          <li>Cloud: Azure services: Azure Identity Management, Virtual Network, Virtual Machine, Azure bastian, Security Control, Monitor, Logs, Storage(BLOB), Virtual Machine Scale Set (VMSS)</li>
+	  <li>Tools: Git, GitHub Actions</li>
+          <li>Languages: Bash, basic Python</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Languages</h2>
+        <ul>
+          <li>Malay — Native</li>
+          <li>English — Professional</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Resume Notes (Malaysia)</h2>
+        <ul>
+          <li>Keep CV concise (1–2 pages) for local job applications.</li>
+          <li>Show clear dates and visa eligibility if applicable.</li>
+          <li>List certifications & cloud projects early to match job filters.</li>
+        </ul>
+      </section>
+    </aside>
+  </div>
+
+  <footer style="margin-top:18px;color:var(--muted);font-size:13px">
+    <strong>How to use:</strong> Replace placeholder contact info, phone and email. Update project details with concrete metrics. Save this file as <code>index.html</code> and deploy to GitHub Pages, Netlify, or S3 for a static resume site.
+  </footer>
+</div>
+
+  </div>
+</body>
+</html>
