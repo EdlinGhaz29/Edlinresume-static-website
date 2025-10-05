@@ -71,14 +71,17 @@ Deployment Step
    - In the AWS Console, open Amazon S3 and create a new bucket, name: edlin-resume-staticwebsite.
    - Enable Static Website Hosting under the Properties Tab.
    - Set index document to index.html.
+
 2. Upload Website files.
    - In the Object tab, click upload and Add file/folder.
    - Select all your website files (HTML,CSS,JS, images). 
    - Click Upload to deploy them to the bucket.
+
 3. Configure Permission.
    - Under Permissions, enable Block all Public Access: OFF.
    - Apply a bucket policy allowing public read access for the website files.
    - Bucket static website endpoint: http://edlin-resume-staticwebsite.s3-website-us-east-1.amazonaws.com
+
 4. Create a Cloudfront distribution.
    - Open Amazon Cloudfront and create Distribution.
    - pointing to your S3 website endpoint.
@@ -89,6 +92,7 @@ Deployment Step
      This can expose sensitive information about your website's structure and content,
      which is a security risk.
    - Distribution Domain Name: d3d366veqcd1ec.cloudfront.net
+
 5. Update Content.
    When making future update:
    - Re-upload my updated files through the S3 Console.
@@ -112,9 +116,9 @@ To view the website locally:
     ```
 2. Open `index.html` in your browser.
 
-## 🌐 Deploying
+Deploying
 
-### Deploy to AWS S3 + CloudFront
+Deploy to AWS S3 + CloudFront
 1. Upload all files in this repo to an AWS S3 bucket.
 2. Enable static website hosting on the bucket.
 3. Set `index.html` as the root document.
